@@ -52,21 +52,15 @@
 }
 .menu .display {
   background-image: url("./images/MenuTriangle.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   width: min-content;
 }
-.display{
-  transform: translate(-12px);
-}
 .bike {
-  width: 115px;
-  height: 107px;
   position: relative;
-  transform: translate(10px, 3px);
-
+  transform: translate(-3px, -3px);
 }
-

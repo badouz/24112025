@@ -17,7 +17,7 @@ function MenuElement() {
 function Menu() {
   return (<React.Fragment>
     <div className="menu">
-      <div className="row no-wrap ">
+      <div className="row no-wrap">
         {MenuElement()}
         {MenuElement()}
         {MenuElement()}
