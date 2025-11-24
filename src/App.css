@@ -50,14 +50,23 @@
   flex-wrap: nowrap;
   color: #192176;
 }
-.bike{
-  width: 115px;
-  height: 107px;
-
-}
-.menu .display{
+.menu .display {
   background-image: url("./images/MenuTriangle.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-start; 
+  width: min-content;
 }
+.display{
+  transform: translate(-12px);
+}
+.bike {
+  width: 115px;
+  height: 107px;
+  position: relative;
+  transform: translate(10px, 3px);
+
+}
+
