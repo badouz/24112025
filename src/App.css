@@ -48,8 +48,16 @@
 .menu .row {
   display: flex;
   flex-wrap: nowrap;
+  color: #192176;
 }
-.MenuImage{
+.bike{
   width: 115px;
   height: 107px;
+
+}
+.menu .display{
+  background-image: url("./images/MenuTriangle.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
 }
