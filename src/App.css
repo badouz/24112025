@@ -44,7 +44,10 @@
   flex-wrap: nowrap;
   ;
 }
-
+.menu-element{
+  width: 115px;
+  height: 107px;
+}
 .menu .row {
   display: flex;
   flex-wrap: nowrap;
