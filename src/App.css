@@ -39,3 +39,11 @@
     transform: rotate(360deg);
   }
 }
+.menu{
+  display: flex;
+  height:min-content;
+  overflow-x: hidden;
+}
+.menu .row{
+  flex-wrap: nowrap;
+}
