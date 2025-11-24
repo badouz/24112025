@@ -1,10 +1,10 @@
 import React from "react";
 import bike from "./images/MenuBike.png";
 const products = [
-  { image:bike, descrption: "Road Bike" },
-  { image:bike, descrption: "Road Bike" },
-  { image:bike, descrption: "Road Bike" },
-  { image:bike, descrption: "Road Bike" }
+  { image:bike, text: "Road Bike" },
+  { image:bike, text: "Road Bike" },
+  { image:bike, text: "Road Bike" },
+  { image:bike, text: "Road Bike" }
 ];
 function MenuElement(props) {
   return (
@@ -14,7 +14,7 @@ function MenuElement(props) {
           <img className="bike" src={props.image} alt="bike" />
         </div>
         <div className="text-center font-weight-bold">
-          {props.description}
+          {props.text}
         </div>
       </div>
     </React.Fragment>
@@ -25,7 +25,7 @@ function Menu() {
     <React.Fragment>
       <div className="menu">
         <div className="row no-wrap">
-          {products.map((p, i) => ( <MenuElement key={i}image={p.image}description={p.descrption}/>
+          {products.map((p, i) => ( <MenuElement key={i}image={p.image}text={p.text}/>
           ))}
         </div>
       </div>
