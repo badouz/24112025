@@ -42,7 +42,7 @@
 .menu {
   display: flex;
   flex-wrap: nowrap;
-  margin-left: 5%;
+  ;
 }
 
 .menu .row {
