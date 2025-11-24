@@ -1,14 +1,11 @@
 import React from "react";
 import bike from "./images/MenuBike.png";
-
-
 const products = [
   { image:bike, descrption: "Road Bike" },
   { image:bike, descrption: "Road Bike" },
   { image:bike, descrption: "Road Bike" },
   { image:bike, descrption: "Road Bike" }
 ];
-
 function MenuElement(props) {
   return (
     <React.Fragment>
@@ -23,23 +20,16 @@ function MenuElement(props) {
     </React.Fragment>
   );
 }
-
 function Menu() {
   return (
     <React.Fragment>
       <div className="menu">
         <div className="row no-wrap">
-          {products.map((p, i) => (
-            <MenuElement
-              key={i}
-              image={p.image}
-              description={p.descrption}
-            />
+          {products.map((p, i) => ( <MenuElement key={i}image={p.image}description={p.descrption}/>
           ))}
         </div>
       </div>
     </React.Fragment>
   );
 }
-
 export default Menu;
