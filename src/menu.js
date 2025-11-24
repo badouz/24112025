@@ -6,10 +6,10 @@ function Menu(){
     return (<React.Fragment>
             <div className='menu'>
                 <div className='row'>
-                <img src={menuitem} alt='menu item'></img>
-                <img src={menuitem} alt='menu item'></img>
-                <img src={menuitem} alt='menu item'></img>
-                <img src={menuitem} alt='menu item'></img>
+                <img className='MenuImage' src={menuitem} alt='menu item'></img>
+                <img className='MenuImage' src={menuitem} alt='menu item'></img>
+                <img className='MenuImage' src={menuitem} alt='menu item'></img>
+                <img className='MenuImage' src={menuitem} alt='menu item'></img>
                 </div>
             </div>
             </React.Fragment>)

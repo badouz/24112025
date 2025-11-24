@@ -39,11 +39,17 @@
     transform: rotate(360deg);
   }
 }
-.menu{
+.menu {
   display: flex;
-  height:min-content;
-  overflow-x: hidden;
-}
-.menu .row{
   flex-wrap: nowrap;
+  margin-left: 5%;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.MenuImage{
+  width: 115px;
+  height: 107px;
 }
