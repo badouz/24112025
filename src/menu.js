@@ -1,5 +1,6 @@
 import React from "react";
 import bike from "./images/MenuBike.png";
+import line from "./images/LineSeparator.png"
 const products = [
   { image:bike, text: "Road Bike" },
   { image:bike, text: "Road Bike" },
@@ -17,6 +18,7 @@ function MenuElement(props) {
           {props.text}
         </div>
       </div>
+      <img className="line" src={line} alt="separator" height='47'/>
     </React.Fragment>
   );
 }
@@ -24,7 +26,7 @@ function Menu() {
   return (
     <React.Fragment>
       <div className="menu">
-        <div className="row no-wrap">
+        <div className="row no-wrap align-items-center">
           {products.map((p, i) => ( <MenuElement key={i}image={p.image}text={p.text}/>
           ))}
         </div>
