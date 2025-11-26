@@ -39,3 +39,69 @@
     transform: rotate(360deg);
   }
 }
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.product-left {
+  flex-direction: row;
+}
+
+.product-right {
+  flex-direction: row-reverse;
+}
+
+.product-right .product-img{
+  transform: scaleX(-1);
+}
+
+
+.blob-left,
+.blob-right {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.blob-left {
+  background-image: url('/public/img/Ellipse1.png');
+}
+
+.blob-right {
+  background-image: url('/public/img/Ellipse2.png');
+}
+
+.product-img {
+  width: 250px;
+  height: auto;
+  z-index: 1;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: #0d1f70;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
+}
