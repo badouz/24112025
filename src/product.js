@@ -9,7 +9,9 @@ const prodlist = [
 function ProductLeft({ image, name, description, price }) {
   return (
     <div className="product product-left">
+      <div className='product-backgroundL'>
       <img className="product-img" src={image} alt={name} />
+      </div>
       <div className="product-content">
         <h3>{name}</h3>
         <p>{description}</p>
@@ -23,7 +25,9 @@ function ProductLeft({ image, name, description, price }) {
 function ProductRight({ image, name, description, price }) {
   return (
     <div className="product product-right">
+      <div className='product-backgroundR'>
       <img className="product-img" src={image} alt={name} />
+      </div>
       <div className="product-content">
         <h3>{name}</h3>
         <p>{description}</p>
